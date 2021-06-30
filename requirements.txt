@@ -1,0 +1,7 @@
+elasticsearch==7.1.0
+yarn-api-client==1.0.2
+hdfs==2.5.8
+redis-py-cluster==2.0.0
+requests==2.23.0
+pyhocon==0.3.55
+docopt==0.6.2

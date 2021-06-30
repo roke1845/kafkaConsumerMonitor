@@ -1,0 +1,6 @@
+{
+"nifi-ForemanDashboard": {"nifi-ForemanDashboard-group02": "ForemanDashboard"},
+"nifi-RichFeederUsageKafkaMeta": {"nifi-RichFeederUsage-20200606": "RichFeederUsageKafkaMeta"},
+"SmartPlugOut": {"prod-smartPlugOut-groupid-01": "FeederPreparation,FujiTraxBeat,PreparationCartInfo,SFCStatusForFeeder"},
+"ASRSMachineTracking": {"asrs-prod-02": "ASRS-Equipment-Status"}
+}

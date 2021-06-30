@@ -1,0 +1,10 @@
+version: "2"
+services:
+  burrow:
+    image: burrow
+    volumes:
+      - ./docker-config:/etc/burrow/
+      - ./tmp:/var/tmp/burrow
+    ports:
+      - 8000:8000
+    restart: always

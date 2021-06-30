@@ -1,0 +1,26 @@
+[zookeeper]
+servers=[ "zookeeperhost:2181" ]
+timeout=6
+root-path="/burrow"
+
+[cluster.prod]
+class-name="kafka"
+servers=[ "kafkahost00:9092", "kafkahost01:9092", "kafkahost02:9092" ]
+client-profile="prodclient"
+topic-refresh=60
+offset-refresh=30
+
+[client-profile.prodclient]
+kafka-version="1.1.0"
+client-id="prod-burrow-client"
+
+[httpserver.default]
+address=":8000"
+
+[consumer.prod]
+class-name="kafka"
+cluster="prod"
+servers=[ "kafkahost00:9092", "kafkahost01:9092", "kafkahost02:9092" ]
+client-profile="prodclient"
+group-blacklist="^(console-consumer-|python-kafka-consumer-|quick-).*$"
+group-whitelist=""
